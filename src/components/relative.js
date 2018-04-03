@@ -158,8 +158,8 @@ export default class FormattedRelative extends Component {
     const {value, children} = this.props;
 
     let formattedRelative = formatRelative(value, {
-      ...this.props,
       ...this.state,
+      ...this.props
     });
 
     if (typeof children === 'function') {

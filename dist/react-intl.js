@@ -1,5 +1,5 @@
 /*
- * Copyright 2017, Yahoo Inc.
+ * Copyright 2018, Yahoo Inc.
  * Copyrights licensed under the New BSD License.
  * See the accompanying LICENSE file for terms.
  */
@@ -3771,7 +3771,7 @@ var FormattedRelative = function (_Component) {
           children = _props.children;
 
 
-      var formattedRelative = formatRelative(value, _extends({}, this.props, this.state));
+      var formattedRelative = formatRelative(value, _extends({}, this.state, this.props));
 
       if (typeof children === 'function') {
         return children(formattedRelative);
